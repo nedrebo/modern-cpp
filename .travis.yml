@@ -1,0 +1,12 @@
+sudo: required
+
+language: generic
+
+services:
+  - docker
+  
+before_install:
+  - docker pull nedrebo/modern-cpp
+
+script:
+  - docker run -i -v $PWD:/code nedrebo/modern-cpp bash -e "/code/ci/build.sh"
