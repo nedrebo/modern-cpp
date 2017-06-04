@@ -6,7 +6,7 @@ export CXX=clang++
 
 mkdir -p build && \
     cd build && \
-    cmake ../.. -GNinja && \
+    cmake ../../.. -GNinja && \
     ninja || \
 	exit $?
 
