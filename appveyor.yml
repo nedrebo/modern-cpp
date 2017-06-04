@@ -3,7 +3,4 @@ environment:
   BOOST_ROOT: C:\Libraries\boost_1_64_0
 build_script:
 - cmd: >-
-    mkdir build
-    cd build
-    cmake ..
-    msbuild ModernCpp.sln
+    ci\windows\build.cmd
