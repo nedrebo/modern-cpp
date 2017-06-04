@@ -5,7 +5,7 @@ cd %~dp0
 
 mkdir build
 cd build && ^
-cmake ..\.. && ^
+cmake ..\..\.. && ^
 msbuild ModernCpp.sln
 
 set BUILD_ERROR_CODE=%errorlevel%
