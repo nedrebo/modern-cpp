@@ -4,3 +4,6 @@ environment:
 build_script:
 - cmd: >-
     ci\windows\build.cmd
+test_script:
+- cmd: >-
+    ci\windows\test.cmd
