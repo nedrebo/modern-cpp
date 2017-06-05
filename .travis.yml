@@ -14,4 +14,4 @@ script:
     docker run -i -v $PWD:/code nedrebo/modern-cpp bash -e "/code/ci/linux/test.sh"
 
 after_success:
-  - docker run -i -v $PWD:/code nedrebo/modern-cpp bash -e "coveralls --exclude lib --exclude tests --gcov-options '\-lp'"
+  - docker run -i -v $PWD:/code -w /code nedrebo/modern-cpp coveralls --exclude lib --exclude tests --gcov-options '\-lp'
