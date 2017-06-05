@@ -6,4 +6,4 @@ build_script:
     ci\windows\build.cmd
 test_script:
 - cmd: >-
-    dir ci
+    dir ci\windows
