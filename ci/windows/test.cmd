@@ -3,7 +3,7 @@ echo off
 set ORIGINAL_DIR=%CD%
 cd %~dp0
 
-uild\tests\Debug\tests.exe
+build\tests\Debug\tests.exe
 
 set BUILD_ERROR_CODE=%errorlevel%
 
